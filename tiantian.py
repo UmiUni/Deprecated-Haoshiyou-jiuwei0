@@ -13,7 +13,7 @@ usersDict = {}
 itchat.auto_login(enableCmdQR=2,hotReload=True)
 itchat.get_chatrooms(update=True)
 
-v0= u"您好，北美精品社交平台九尾萌盟😊\n为您打造人脉圈,每天只能加3个群哦😊~\n"
+v0= u"您好，北美精品社交平台九尾萌盟😊\n为您打造人脉圈只能加3个群哦😊~\n"
 v1= u"回复 1 加九尾约饭-东来顺烤鸭聚餐;\n"
 v2= u"回复 2 加九尾萌盟【南湾】租房;\n"
 v3= u"回复 3 加九尾萌盟【东湾】租房;\n"
