@@ -87,7 +87,7 @@ def tuling_reply(msg):
       pullMembersMore(msg, u'棋牌社', CurUserName)
       sleep(0.5)
     elif "6" in msgText and groupCount(CurUserName):
-      pullMembersMore(msg, u'🚗九尾萌盟湾区二手车交易', CurUserName)
+      pullMembersMore(msg, u'🚗【九尾】萌盟湾区二手车交易', CurUserName)
       sleep(0.5)
     elif "7" in msgText and groupCount(CurUserName):
       pullMembersMore(msg, u'九尾萌盟健身', CurUserName)
