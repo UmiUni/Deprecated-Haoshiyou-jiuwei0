@@ -14,17 +14,17 @@ itchat.auto_login(enableCmdQR=2,hotReload=True)
 itchat.get_chatrooms(update=True)
 
 v0= u"您好，北美精品社交平台九尾萌盟😊\n为您打造人脉圈只能加3个群哦😊~\n"
-v1= u"回复 1 加九尾约饭-东来顺烤鸭聚餐;\n"
-v2= u"回复 2 加九尾萌盟【南湾】租房;\n"
-v3= u"回复 3 加九尾萌盟【东湾】租房;\n"
-v4= u"回复 4 加九尾萌盟【三番】租房;\n"
-v5= u"回复 5 加九尾萌盟棋牌社;\n"
-v6= u"回复 6 加九尾萌盟湾区湾区二手车交易;\n"
-v7= u"回复 7 加九尾萌盟健身俱乐部;\n"
-v8= u"回复 8 加九尾萌盟篮球俱乐部;\n"
-v9= u"回复 9 加九尾萌盟羽毛球俱乐部;\n"
-v10=u"回复 10 查看创始人九尾狐美照(嘘…别告诉她).\n"
-vT =v0+v1+v2+v3+v4+v5+v6+v7+v8+v9+v10
+#v1= u"回复 1 加九尾约饭-东来顺烤鸭聚餐;\n"
+v2= u"回复 1 加九尾萌盟【南湾】租房;\n"
+v3= u"回复 2 加九尾萌盟【东湾】租房;\n"
+v4= u"回复 3 加九尾萌盟【三番】租房;\n"
+v5= u"回复 4 加九尾萌盟棋牌社;\n"
+v6= u"回复 5 加九尾萌盟湾区湾区二手车交易;\n"
+v7= u"回复 6 加九尾萌盟健身俱乐部;\n"
+v8= u"回复 7 加九尾萌盟篮球俱乐部;\n"
+v9= u"回复 8 加九尾萌盟羽毛球俱乐部;\n"
+v10=u"回复 9 查看创始人九尾狐美照(嘘…别告诉她).\n"
+vT =v0+v2+v3+v4+v5+v6+v7+v8+v9+v10
 def getName(chatroomName):
     itchat.get_chatrooms(update=True)
     cur_chatrooms = itchat.search_chatrooms(name=chatroomName)
@@ -72,35 +72,34 @@ def tuling_reply(msg):
     msgText = msg['Text']
     
     if "1" in msgText and ("10" not in msgText) and groupCount(CurUserName):
-      pullMembersMore(msg, u'九尾约饭-东来顺烤鸭', CurUserName)
+      pullMembersMore(msg, u'南湾租房', CurUserName)
       sleep(0.5)
     elif "2" in msgText and groupCount(CurUserName):
-      pullMembersMore(msg, u'九尾萌盟【南湾】租房', CurUserName)
+      pullMembersMore(msg, u'东湾租房', CurUserName)
       sleep(0.5)
     elif "3" in msgText and groupCount(CurUserName):
-      pullMembersMore(msg, u'九尾萌盟【东湾】租房', CurUserName)
+      pullMembersMore(msg, u'三番租房', CurUserName)
       sleep(0.5)
     elif "4" in msgText and groupCount(CurUserName):
-      pullMembersMore(msg, u'九尾萌盟【三番】租房', CurUserName)
-      sleep(0.5)
-    elif "5" in msgText and groupCount(CurUserName):
       pullMembersMore(msg, u'棋牌社', CurUserName)
       sleep(0.5)
+    elif "5" in msgText and groupCount(CurUserName):
+      pullMembersMore(msg, u'二手车', CurUserName)
+      sleep(0.5)
     elif "6" in msgText and groupCount(CurUserName):
-      pullMembersMore(msg, u'🚗【九尾】萌盟湾区二手车交易', CurUserName)
+      pullMembersMore(msg, u'健身', CurUserName)
       sleep(0.5)
     elif "7" in msgText and groupCount(CurUserName):
-      pullMembersMore(msg, u'九尾萌盟健身', CurUserName)
+      pullMembersMore(msg, u'篮球', CurUserName)
       sleep(0.5)
     elif "8" in msgText and groupCount(CurUserName):
-      pullMembersMore(msg, u'九尾萌盟篮球', CurUserName)
+      pullMembersMore(msg, u'羽毛', CurUserName)
       sleep(0.5)
     elif "9" in msgText and groupCount(CurUserName):
-      pullMembersMore(msg, u'九尾萌盟羽毛', CurUserName)
-      sleep(0.5)
-    elif "10" in msgText:
       itchat.send_msg('正在加载请耐心等候...', CurUserName)
       r = itchat.send('@img@1.jpeg', CurUserName)
+      sleep(0.5)
+    elif "10" in msgText:
       sleep(0.5)
     itchat.send_msg(vT, CurUserName)
     sleep(0.5)
