@@ -19,7 +19,7 @@ v2= u"回复 1 加九尾萌盟【南湾】租房;\n"
 v3= u"回复 2 加九尾萌盟【东湾】租房;\n"
 v4= u"回复 3 加九尾萌盟【三番】租房;\n"
 v5= u"回复 4 加九尾萌盟棋牌社;\n"
-v6= u"回复 5 加九尾萌盟湾区湾区二手车交易;\n"
+v6= u"回复 5 加九尾萌盟湾区二手货交易;\n"
 v7= u"回复 6 加九尾萌盟健身俱乐部;\n"
 v8= u"回复 7 加九尾萌盟篮球俱乐部;\n"
 v9= u"回复 8 加九尾萌盟羽毛球俱乐部;\n"
@@ -84,7 +84,7 @@ def tuling_reply(msg):
       pullMembersMore(msg, u'棋牌社', CurUserName)
       sleep(0.5)
     elif "5" in msgText and groupCount(CurUserName):
-      pullMembersMore(msg, u'二手车', CurUserName)
+      pullMembersMore(msg, u'二手货', CurUserName)
       sleep(0.5)
     elif "6" in msgText and groupCount(CurUserName):
       pullMembersMore(msg, u'健身', CurUserName)
